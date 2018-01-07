@@ -1,31 +1,54 @@
 <template>
-    <div>
-	      <nav class="nav has-shadow">
-	        <div class="container">
-	          <a href="/">
-	            <img src="http://bit.ly/vue-img"
-	              alt="Vue SPA" />
-	          </a>
-	        </div>
-	      </nav>
-	      <section class="main-section section"></section>
-	      <footer class="footer">
-	        <div class="container">
-	          <div class="content has-text-centered">
-	            Follow us on
-	            <a href="https://twitter.com"
-	            target="_blank">Twitter</a>
-	          </div>
-	        </div>
-	      </footer>
+  	<div>
+		<app-header></app-header>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-8">
+					<router-view></router-view>
+				</div>
+			</div>
+		</div>
+		<app-footer></app-footer>
 	</div>
 </template>
 
 <script>
-    export default {}
+	import AppHeader from './Header.vue'
+	import AppFooter from './Footer.vue'
+
+	export default {
+		components: {
+			'app-header': AppHeader,
+			'app-footer': AppFooter
+		}
+	}
 </script>
 
 <style lang="less">
-@import '~bootstrap/dist/css/bootstrap.css';
-@import '~bootstrap-vue/dist/bootstrap-vue.css';
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+@base: #1B1C21;
+@mainTable: #222C3B;
+
+html {
+	height: 100%;
+}
+
+body {
+	background: @base;
+	background-size: cover;
+	background-position: center;
+	font-family: Arial;
+}
+
+.team-content {
+	text-align: center;
+	text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.1);
+    margin: 10% 5% 5% 5%;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 3em;
+}
 </style>
