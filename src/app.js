@@ -1,10 +1,12 @@
-import Vue from "vue";
+import Vue from 'vue'
+import AppLayout from './theme/Layout.vue'
+import BootstrapVue from 'bootstrap-vue'
+import router from './router'
 
+Vue.use(BootstrapVue)
 const app = new Vue({
-	data: {
-		hello: "Test"
-	},
-	template: '<div id="app">{{hello}}</div>'
-});
+	router,
+	...AppLayout
+})
 
-export { app };
+export { app, router }
