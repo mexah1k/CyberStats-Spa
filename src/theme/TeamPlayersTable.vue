@@ -1,40 +1,80 @@
 <template>
 <div class="col-lg-3">
     <div class="team-players-table">
-        <div class="card text-white bg-dark mb-3 player-form">
+        <div class="card text-white bg-dark mb-3">
             <div class="card-header">"Dendi" Andrew Maek</div>
             <div class="card-body">
-                <img class="player-logo" src="https://www.vip-bet.com/wp-content/uploads/2016/06/dendi-1.png">
-                <span class="card-text">Position: </span>
-                <span class="card-text">Age: </span>
-                <span class="card-text">Country: </span>
+                <div class="image-block">
+                    <img class="player-logo" src="https://www.vip-bet.com/wp-content/uploads/2016/06/dendi-1.png">
+                </div>
+                <div class="card-text">
+                    <div class="player-info">
+                        Position:
+                    </div>
+                    <div class="player-info">
+                        Age:
+                    </div>
+                    <div class="player-info">
+                        Country:
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="card text-white bg-dark mb-3 player-form">
+        <div class="card text-white bg-dark mb-3">
             <div class="card-header">"Dendi" Andrew Maek</div>
             <div class="card-body">
-                <img class="player-logo" src="https://www.vip-bet.com/wp-content/uploads/2016/06/dendi-1.png">
-                <span class="card-text">Position: </span>
-                <span class="card-text">Age: </span>
-                <span class="card-text">Country: </span>
+                <div class="image-block">
+                    <img class="player-logo" src="https://www.vip-bet.com/wp-content/uploads/2016/06/dendi-1.png">
+                </div>
+                <div class="card-text">
+                    <div class="player-info">
+                        Position:
+                    </div>
+                    <div class="player-info">
+                        Age:
+                    </div>
+                    <div class="player-info">
+                        Country:
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="card text-white bg-dark mb-3 player-form">
+        <div class="card text-white bg-dark mb-3">
             <div class="card-header">"Dendi" Andrew Maek</div>
             <div class="card-body">
-                <img class="player-logo" src="https://www.vip-bet.com/wp-content/uploads/2016/06/dendi-1.png">
-                <span class="card-text">Position: </span>
-                <span class="card-text">Age: </span>
-                <span class="card-text">Country: </span>
+                <div class="image-block">
+                    <img class="player-logo" src="https://www.vip-bet.com/wp-content/uploads/2016/06/dendi-1.png">
+                </div>
+                <div class="card-text">
+                    <div class="player-info">
+                        Position:
+                    </div>
+                    <div class="player-info">
+                        Age:
+                    </div>
+                    <div class="player-info">
+                        Country:
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="card text-white bg-dark mb-3 player-form">
+        <div class="card text-white bg-dark mb-3">
             <div class="card-header">"Dendi" Andrew Maek</div>
             <div class="card-body">
-                <img class="player-logo" src="https://www.vip-bet.com/wp-content/uploads/2016/06/dendi-1.png">
-                <span class="card-text">Position: </span>
-                <span class="card-text">Age: </span>
-                <span class="card-text">Country: </span>
+                <div class="image-block">
+                    <img class="player-logo" src="https://www.vip-bet.com/wp-content/uploads/2016/06/dendi-1.png">
+                </div>
+                <div class="card-text">
+                    <div class="player-info">
+                        Position:
+                    </div>
+                    <div class="player-info">
+                        Age:
+                    </div>
+                    <div class="player-info">
+                        Country:
+                    </div>
+                </div>
             </div>
         </div>
         <div class="card text-white bg-dark mb-3">
@@ -68,11 +108,13 @@
 }
 
 .image-block {
+    vertical-align: top;
     display: inline-block;
 }
 
 .card-text {
     font-size: 12px;
+    margin-left: 10px;
     display: inline-block;
 }
 
