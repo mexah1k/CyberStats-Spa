@@ -41,12 +41,6 @@ body {
 	font-family: Arial;
 }
 
-.team-content {
-	text-align: center;
-	text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.1);
-    margin: 10% 5% 5% 5%;
-}
-
 h1 {
 	font-weight: 700;
 	font-size: 3em;

@@ -12,9 +12,9 @@
 			<tbody v-for="team in teams" v-bind:key="team.id">
 				<tr class="table-active">
 					<td>{{ team.id }}</td>
-					<td>{{ team.logo }} {{ team.name }}</td>
+					<td>{{ team.logoUrl }} {{ team.name }}</td>
 					<td>{{ team.points }}</td>
-					<td>{{ team.revenue }}</td>
+					<td>{{ team.revenue }}$</td>
 				</tr>
 			</tbody>
 		</table> 
@@ -22,20 +22,33 @@
 </template>
 
 <script>
+	import webApiService from '../app.web-api.service.js'
+
 	export default {
 		data () {
 			return {
-				teams: [
-					{ id: 1, logo: 'Logo', name: 'Liquid', points: '2 500', revenue: '100 000$' },
-					{ id: 2, logo: 'Logo', name: 'Liquid', points: '2 500', revenue: '100 000$' },
-					{ id: 3, logo: 'Logo', name: 'Liquid', points: '2 500', revenue: '100 000$' },
-					{ id: 4, logo: 'Logo', name: 'Liquid', points: '2 500', revenue: '100 000$' },
-					{ id: 5, logo: 'Logo', name: 'Liquid', points: '2 500', revenue: '100 000$' },
-					{ id: 6, logo: 'Logo', name: 'Liquid', points: '2 500', revenue: '100 000$' },
-					{ id: 7, logo: 'Logo', name: 'Liquid', points: '2 500', revenue: '100 000$' },
-					{ id: 8, logo: 'Logo', name: 'Liquid', points: '2 500', revenue: '100 000$' }
-				]
+				id: this.$route.params.id,
+				teams: []
 			}
+		},
+		methods: {
+			loadTeams () {
+				webApiService.getTeams().then(data => {
+					this.teams = data
+				})
+			}
+		},
+		created () {
+			this.loadTeams()
 		}
 	}
 </script>
+
+<<style lang="less" scoped>
+
+.team-content {
+	text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.1);
+    margin: 10% 5% 5% 5%;
+}
+
+</style>
