@@ -5,45 +5,55 @@
             <div class="card-header">"Dendi" Andrew Maek</div>
             <div class="card-body">
                 <img class="player-logo" src="https://www.vip-bet.com/wp-content/uploads/2016/06/dendi-1.png">
-                <span class="player-info card-text">Position: </span>
-                <span class="player-info card-text">Age: </span>
-                <span class="player-info card-text">Country: </span>
+                <span class="card-text">Position: </span>
+                <span class="card-text">Age: </span>
+                <span class="card-text">Country: </span>
             </div>
         </div>
         <div class="card text-white bg-dark mb-3 player-form">
             <div class="card-header">"Dendi" Andrew Maek</div>
             <div class="card-body">
                 <img class="player-logo" src="https://www.vip-bet.com/wp-content/uploads/2016/06/dendi-1.png">
-                <span class="player-info card-text">Position: </span>
-                <span class="player-info card-text">Age: </span>
-                <span class="player-info card-text">Country: </span>
+                <span class="card-text">Position: </span>
+                <span class="card-text">Age: </span>
+                <span class="card-text">Country: </span>
             </div>
         </div>
         <div class="card text-white bg-dark mb-3 player-form">
             <div class="card-header">"Dendi" Andrew Maek</div>
             <div class="card-body">
                 <img class="player-logo" src="https://www.vip-bet.com/wp-content/uploads/2016/06/dendi-1.png">
-                <span class="player-info card-text">Position: </span>
-                <span class="player-info card-text">Age: </span>
-                <span class="player-info card-text">Country: </span>
+                <span class="card-text">Position: </span>
+                <span class="card-text">Age: </span>
+                <span class="card-text">Country: </span>
             </div>
         </div>
         <div class="card text-white bg-dark mb-3 player-form">
             <div class="card-header">"Dendi" Andrew Maek</div>
             <div class="card-body">
                 <img class="player-logo" src="https://www.vip-bet.com/wp-content/uploads/2016/06/dendi-1.png">
-                <span class="player-info card-text">Position: </span>
-                <span class="player-info card-text">Age: </span>
-                <span class="player-info card-text">Country: </span>
+                <span class="card-text">Position: </span>
+                <span class="card-text">Age: </span>
+                <span class="card-text">Country: </span>
             </div>
         </div>
         <div class="card text-white bg-dark mb-3">
             <div class="card-header">"Dendi" Andrew Maek</div>
             <div class="card-body">
-                <img class="player-logo" src="https://www.vip-bet.com/wp-content/uploads/2016/06/dendi-1.png">
-                <span class="player-info card-text">Position: </span>
-                <span class="player-info card-text">Age: </span>
-                <span class="player-info card-text">Country: </span>
+                <div class="image-block">
+                    <img class="player-logo" src="https://www.vip-bet.com/wp-content/uploads/2016/06/dendi-1.png">
+                </div>
+                <div class="card-text">
+                    <div class="player-info">
+                        Position:
+                    </div>
+                    <div class="player-info">
+                        Age:
+                    </div>
+                    <div class="player-info">
+                        Country:
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -57,8 +67,13 @@
     margin-left: 20%;
 }
 
-.player-info {
-    text-align: center;
+.image-block {
+    display: inline-block;
+}
+
+.card-text {
+    font-size: 12px;
+    display: inline-block;
 }
 
 .player-logo {
