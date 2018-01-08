@@ -1,13 +1,7 @@
 <template>
-  	<div>
+  	<div class="container-fluid">
 		<app-header></app-header>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-lg-8">
-					<router-view></router-view>
-				</div>
-			</div>
-		</div>
+			<router-view></router-view>
 		<app-footer></app-footer>
 	</div>
 </template>
